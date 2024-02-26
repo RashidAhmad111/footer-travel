@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    border: 0;
+    outline: 0;
+    transition: all 0.3s linear;
+    font-family: 'Lora', serif;
+
+}
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body{
+   font-size: 65%; 
+}
+:root{
+    --min-color: #fff;
+    --th-color: #EAA636;
+    --font:#1E1916;
+    --bg: #FDF5EB;
+}
+.subscribe{
+    background: var(--th-color);
+    color: var(--min-color);
+    height: 12rem;
+    width: 80%;
+    margin: 4rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.subscribe h1{
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.subscribe input{
+    background: none;
+    border: 0.1rem solid var(--min-color);
+    padding: 0.5rem 1rem;
+    color: var(--font);
+    font-size: 1rem;
+}
+.subscribe label{
+    background: var(--font);
+    font-size: 1rem;
+    color: var(--min-color);
+    padding: 0.5rem 1rem;
+}
+.footer{
+    background: #000;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20%,1fr));
+    gap: 1rem;
+    text-align: center;
+    padding: 4rem;
+}
+.footer h3{
+    font-size: 1.5rem;
+    margin: 1.7rem 0;
+    color: var(--th-color);
+}
+.footer p{
+    font-size: 1rem;
+    margin: 1rem 0;
+    color: var(--min-color);
+}
+.footer i{
+    font-size: 2rem;
+    margin: 1rem 0.5rem;
+    color: var(--min-color);
+}
+.footer i:hover,
+.footer a:hover{
+    color: var(--th-color);
+} 
+.footer a{
+    display: block;
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    color: var(--min-color);
+}
+.footer input{
+    background: none;
+    border: 0.1rem solid var(--min-color);
+    padding: 0.5rem;
+    color: var(--min-color);
+    font-size: 1rem;
+}
+.footer label{
+    background: var(--th-color);
+    font-size: 1rem;
+    color: var(--min-color);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:850px){
+    html{
+        font-size: 55%; 
+    }
+    .top{
+        display: none;
+    }
+    .header .call{
+        display: none;
+    }
+    .header .bars{
+        display: block;
+    }
+    header .navbar{
+        position: fixed;
+        /* */ bottom: 10000rem; left: 0; 
+        text-align: center;
+        background: rgba(10, 10, 9, 0.6);
+        width: 100%;
+    }
+    header .navbar.active{
+        bottom: 82%;
+    }
+    header .navbar a{
+        display: block;
+        margin: 0.3rem 0;
+        padding: 1.5rem;
+        font-size: 2.6rem;
+        color: var(--min-color);
+    }
+    header .navbar a:hover{
+        background: var(--min-color);
+    }
+    .total .row,
+    .team .row,
+    .footer{
+        grid-template-columns: repeat(auto-fit,minmax(40%,1fr));
+    }
+}
